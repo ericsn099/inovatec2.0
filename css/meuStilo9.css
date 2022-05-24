@@ -1,0 +1,657 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:ital,wght@0,400;1,600&display=swap');
+
+:root {
+    --font-primary: 'Inter', sans-serif;
+    --font-secundary: 'Montserrat', sans-serif;
+    --corBranca: #fff;
+    --corPrincipal: #03e4ff;
+    --preto: #191919;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: var(--font-secundary);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgba(51, 51, 199, 0.5), rgba(3, 62, 134, 0.9)), url(img/bk.jpg);
+    background-size: cover;
+    background-position: top right;
+}
+
+.botoes {
+    margin-right: 20px;
+    display: flex;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.b-excluir {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b-excluir button {
+    padding: 10px 40px;
+    background-color: rgb(231, 29, 29);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container-area {
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px #03e4ff;
+    background-color: var(--corBranca);
+
+}
+
+.cont-texto {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: 3px solid #333;
+}
+
+.cont-texto h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    display: flex;
+    width: 100%;
+}
+
+.social-media-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-media-icon i {
+    font-size: 58px;
+    margin-right: 20px;
+    color: var(--preto);
+    margin-top: 20px;
+}
+
+.descricao {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 20px;
+    text-align: justify;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--preto);
+}
+
+.cont-texto .cad {
+    display: block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background-color: var(--corPrincipal);
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--preto);
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: background-color 1s;
+}
+
+.cont-texto .cad:hover {
+    background-color: var(--preto);
+    color: var(--corBranca);
+    border: 2px solid var(--corPrincipal);
+}
+
+/* form */
+
+.form {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+
+}
+
+.form form {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+form label input {
+    height: 50px;
+    width: 400px;
+    padding-left: 40px;
+    z-index: 1;
+    margin-right: 20px;
+    border: 0;
+    outline: 0;
+    border-bottom: 3px solid var(--corPrincipal);
+    transition: border-bottom 1s;
+    font-size: 18px;
+    color: var(--preto);
+    font-weight: 600;
+}
+
+form label input::placeholder {
+    font-size: 18px;
+}
+
+form label input:hover {
+
+    border-bottom: 3px solid var(--preto);
+}
+
+.form label i {
+    font-size: 22px;
+    margin-right: -20px;
+    z-index: 99;
+}
+
+
+form .alterar {
+    display: block;
+    padding: 10px 25px;
+    background-color: var(--corPrincipal);
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--preto);
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: background-color 1s;
+}
+
+form a {
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--preto);
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: background-color 1s;
+}
+
+form .voltar {
+    display: block;
+    padding: 10px 25px;
+    background-color: var(--corPrincipal);
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--preto);
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: background-color 1s;
+}
+
+form .excluir {
+    display: flex;
+    margin-left: 12px;
+    padding: 10px 20px;
+    background-color: rgb(231, 29, 29);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+form button:hover {
+    background-color: var(--preto);
+    color: var(--corBranca);
+    border: 2px solid var(--corPrincipal);
+    cursor: pointer;
+}
+
+form a:hover {
+    background-color: var(--preto);
+    color: var(--corBranca);
+    border: 2px solid var(--corPrincipal);
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--preto);
+    color: var(--corBranca);
+    border: 2px solid var(--corPrincipal);
+    cursor: pointer;
+}
+
+.form-img {
+    align-items: inherit;
+    width: 100%;
+    height: 140px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-area {
+    width: 120px;
+    height: 120px;
+}
+
+.img-area img {
+    width: 90%;
+    height: 90%;
+}
+
+
+
+/*Responsividade */
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+
+    .container-area {
+
+        background: linear-gradient(to top, rgba(0, 0, 1, 0.5), rgba(3, 62, 134, 0.9));
+    }
+
+    .cont-texto {
+        display: none;
+    }
+
+    .container-area {
+        height: auto;
+    }
+
+    .form {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .form form {
+        padding-left: 20px;
+    }
+
+    .form label {
+        width: calc(100vw - 20px);
+    }
+
+    .form label i {
+        width: 40px;
+        height: 40px;
+        margin-right: -40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--corBranca);
+    }
+
+    form label input {
+        background-color: transparent;
+        color: var(--corBranca);
+    }
+
+    .form label input:hover {
+        border-bottom: 3px solid var(--corBranca);
+    }
+
+    .form label input::placeholder {
+        color: var(--corBranca);
+    }
+
+    form .alterar {
+        height: 50px;
+        width: calc(100vw - 20px);
+        display: flex;
+        margin-left: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    form .voltar {
+        height: 50px;
+        width: calc(100vw - 20px);
+        display: flex;
+        margin-left: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form .excluir {
+        margin-top: 15px;
+        height: 50px;
+        width: calc(100vw - 20px);
+        margin-right: 20px;
+    }
+
+    .botoes {
+        height: 200px;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+
+    .botoes button {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+
+    .container-area {
+
+        background: linear-gradient(to top, rgba(0, 0, 1, 0.5), rgba(3, 62, 134, 0.9));
+    }
+
+    .cont-texto {
+        display: none;
+    }
+
+    .container-area {
+        height: auto;
+    }
+
+    .form {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .form form {
+        margin-top: 60px;
+    }
+
+    .form label {
+        margin-top: 15px;
+        height: 50px;
+        width: calc(100vw - 20px);
+    }
+
+    .form label i {
+        width: 40px;
+        height: 40px;
+        margin-right: -40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--corBranca);
+    }
+
+    form label input {
+        background-color: transparent;
+        width: calc(100vw - 20px);
+        color: var(--corBranca);
+    }
+
+    .form label input:hover {
+        border-bottom: 3px solid var(--corBranca);
+    }
+
+    .form label input::placeholder {
+        color: var(--corBranca);
+    }
+
+    form .alterar {
+        height: 50px;
+        width: calc(100vw - 20px);
+        display: flex;
+        margin-left: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    form .voltar {
+        height: 50px;
+        width: calc(100vw - 20px);
+        display: flex;
+        margin-left: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form .excluir {
+        margin-top: 15px;
+        height: 50px;
+        width: calc(100vw - 20px);
+        margin-right: 20px;
+    }
+
+    .botoes {
+        height: 200px;
+        flex-direction: column;
+    }
+    .botoes button {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+
+    .container-area {
+
+        background: linear-gradient(to top, rgba(0, 0, 1, 0.5), rgba(3, 62, 134, 0.9));
+    }
+
+    .cont-texto {
+        display: none;
+    }
+
+    .container-area {
+        height: auto;
+    }
+
+    .form {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .form form {
+        margin-top: 60px;
+    }
+
+    .form label {
+        height: 56px;
+        width: calc(100vw - 5px);
+    }
+
+    .form-img {
+        align-items: inherit;
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form label i {
+        width: 40px;
+        height: 40px;
+        margin-right: -40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--corBranca);
+    }
+
+    form label input {
+        background-color: transparent;
+        color: var(--corBranca);
+    }
+
+    .form label input:hover {
+        border-bottom: 3px solid var(--corBranca);
+    }
+
+    .form label input::placeholder {
+        color: var(--corBranca);
+    }
+
+    form .alterar {
+        height: 50px;
+        width: calc(100vw - 20px);
+        display: flex;
+        margin-left: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form .voltar {
+        height: 50px;
+        width: calc(100vw - 20px);
+        display: flex;
+        margin-left: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form .excluir {
+        margin-top: 15px;
+        height: 50px;
+        width: calc(100vw - 20px);
+        margin-right: 20px;
+    }
+
+    .botoes {
+        
+        height: 200px;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+
+    .botoes button {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 281px) {
+
+    .container-area {
+
+        background: linear-gradient(to top, rgba(0, 0, 1, 0.5), rgba(3, 62, 134, 0.9));
+    }
+
+    .cont-texto {
+        display: none;
+    }
+
+    .container-area {
+        height: auto;
+    }
+
+    .form {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .form form {
+        margin-top: 60px;
+        margin-left: 8px;
+    }
+
+    .form label {
+        height: 64px;
+        width: calc(100vw - 5px);
+    }
+
+    .form-img {
+        align-items: inherit;
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form label i {
+        width: 40px;
+        height: 40px;
+        margin-right: -40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--corBranca);
+    }
+
+    form label input {
+        background-color: transparent;
+        color: var(--corBranca);
+    }
+
+    .form label input:hover {
+        border-bottom: 3px solid var(--corBranca);
+    }
+
+    .form label input::placeholder {
+        color: var(--corBranca);
+    }
+
+    form .alterar {
+        height: 50px;
+        width: calc(100vw - 20px);
+        display: flex;
+        margin-left: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    form .voltar {
+        height: 50px;
+        width: calc(100vw - 20px);
+        display: flex;
+        margin-left: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form .excluir {
+        margin-top: 15px;
+        height: 50px;
+        width: calc(100vw - 20px);
+        margin-right: 20px;
+    }
+
+    .botoes {
+        height: 218px;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+
+    .botoes button {
+        margin-bottom: 20px;
+    }
+}
